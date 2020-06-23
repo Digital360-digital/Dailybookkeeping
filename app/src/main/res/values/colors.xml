@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="home_page_txt">#026AC0</color>
+    <color name="white">#ffffff</color>
+
+    <color name="number_background">#6BAC06</color>
+    <color name="oparetor_background">#4C60C9</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="spcial">#E91E63</color>
+    <color name="delete">#FF1100</color>
+</resources>

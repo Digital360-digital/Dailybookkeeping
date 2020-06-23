@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:textColor="#05BB08"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Income"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+
+            />
+
+        <TextView
+            android:id="@+id/reportTotalIncome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            
+            android:layout_weight="1"
+            
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:weightSum="3"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Expense"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+
+            />
+
+        <TextView
+            android:id="@+id/reportLastTotalExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            
+            android:layout_weight="1"
+            
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Loan Taken"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+
+            />
+
+        <TextView
+            android:id="@+id/reportLastTotalTakenLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Loan Given"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            
+
+            />
+
+        <TextView
+            android:id="@+id/reportLastTotalGivenLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Loan Return"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+
+            />
+
+        <TextView
+            android:id="@+id/reportLastTotalReturnLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Loan Paid"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:layout_weight="2"
+            />
+
+        <TextView
+            android:id="@+id/reportLastTotalPaidLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="20000"
+            android:textSize="25dp"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reportToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="Today"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/reportLast7day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="Last 7 days"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/reportLast30day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="This Month"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/reportLastYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="This Year"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/deleteId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/btn_bac_cal"
+        android:padding="20dp"
+        android:text="Clear All Data"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+
+
+
+</LinearLayout>

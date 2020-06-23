@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add money"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/income_amount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter your Amount"
+            android:inputType="numberDecimal"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_amoney"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source Name"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/income_source"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter Your Source"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Date"
+            android:textColor="@color/home_page_txt"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/income_date"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/calender" />
+        <TextView
+            android:id="@+id/showtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/income_submit"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_redius"
+        android:padding="20dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/incomeToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="Today"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/incomeLast7day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="This Week"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:id="@+id/incomeThisMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="This Month"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:id="@+id/incomeThisYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/subutton"
+                android:padding="20dp"
+                android:text="This Year"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/btn_bac_cal"
+        android:padding="20dp"
+        android:text="Calculator"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
